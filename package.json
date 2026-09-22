@@ -1,13 +1,22 @@
 {
   "name": "@jmgduarte/headless-rest",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": ["dist"],
+  "description": "REST transport and content-client implementation for loading and submitting Headless Core content through HTTP APIs.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmgduarte1/headless-renderer-rest.git"
+  },
+  "license": "MIT",
   "dependencies": {
-    "@jmgduarte/headless-core": "git+ssh://git@github.com/jmgduarte1/headless-renderer-core.git#dist"
+    "@jmgduarte/headless-core": "^0.0.1"
   },
   "sideEffects": false
 }
